@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    Operators Assemble
+</head>
+
+<body>
+    <p>
+        First Number = <input type="text" id="num1">
+        Second Number = <input type="text" id="num2">
+    </p>
+    <form>
+        <input type="button" onclick="add()" value="Addition">
+        <input type="button" onclick="sub()" value="Subtraction">
+        <input type="button" onclick="multi()" value="Multiplication">
+        <input type="button" onclick="division()" value="Division">
+    </form>
+    <script>
+        function add() {
+            var num = parseInt(document.getElementById("num1").value) + parseInt(document.getElementById("num2").value);
+            alert("Addition of the two numbers is + " + num)
+        }
+        function sub() {
+            var num = parseInt(document.getElementById("num1").value) - parseInt(document.getElementById("num2").value);
+            alert("Subtraction of the two numbers is + " + num)
+        }
+        function multi() {
+            var num = parseInt(document.getElementById("num1").value) * parseInt(document.getElementById("num2").value);
+            alert("Multiplication of the two numbers is + " + num)
+        }
+        function division() {
+            var num = parseInt(document.getElementById("num1").value) / parseInt(document.getElementById("num2").value);
+            alert("Division of the two numbers is + " + num)
+        }
+    </script>
+</body>
+
+</html>
